@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+  
+background-image: url("../img/img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+.pro{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    gap: 50px;
+}
+/* .vio .video {
+    display: block;
+    margin: 0 auto; 
+    width: 85%; 
+    max-width: 450px; 
+    height: auto; 
+} */
+.vio{
+    text-decoration: none;
+}
+.vio h1{
+    display: flex;
+    gap: 5px;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 3.5rem;
+    background: linear-gradient(135deg, #8a2be2, #00f2fe); /* إضافة الخلفية/التدرج */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+}
+/* شريط البحث التفاعلي مع كل الشاشات */
+.put_search {
+    display: flex;
+    align-items: center;
+    width: 75%; /* يعطي مساحة ممتازة على شاشة الموبايل */
+    max-width: 550px; /* يحافظ على حجمه المناسب في الشاشات الكبيرة */
+    height: 44px;
+    margin: 20px auto; /* يتوسط الشاشة تلقائياً */
+    border-radius: 30px;
+    background-color: white;
+    border: 1px solid blue;
+    overflow: hidden;
+}
+
+/* حقل النص */
+.put_search .search {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+/* الأيقونة */
+.put_search i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    height: 100%;
+    width: 45px;
+    cursor: pointer;
+}
+.head{
+    display: block;
+    padding: 15px; 
+}
+
+.head a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black; 
+    margin: 5px;  
+}
+.head .d{
+    font-size: 20px;
+    text-decoration: none;
+    color: black; 
+    margin: 5px;  
+}
+.head .w{
+    font-size: 15px;
+    text-decoration: none;
+    color: black; 
+    margin: 5px;  
+}
+.head .s{
+    font-size: 15px;
+    text-decoration: none;
+    color: black; 
+    margin: 5px;  
+}
+.head a:hover{
+    background-color: hsla(210, 13%, 35%, 0.514);
+    border-radius: 25px;
+}
+.head .d:hover{
+    background-color: hsla(210, 13%, 35%, 0.514);
+    border-radius: 25px;
+    height: 500px;
+    width: 500px;
+}
+.head .w:hover{
+    background-color: hsla(210, 13%, 35%, 0.514);
+    border-radius: 25px;
+    height: 500px;
+    width: 500px;
+}
+.head .s:hover{
+    background-color: hsla(210, 13%, 35%, 0.514);
+    border-radius: 25px;
+    height: 500px;
+    width: 500px;
+}
+.sochial {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    flex-wrap: wrap;
+}
+.sochial .sh{
+    background: linear-gradient(135deg, #8a2be2, #00f1fe5e); /* إضافة الخلفية/التدرج */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    transition: .3s ease;
+    text-decoration: none;
+}
+.sochial .sh:hover{
+    border-radius: 10px;
+    transform: scale(2);
+}
