@@ -105,15 +105,14 @@
 
 
     <script>
-        function doSearch() {
-            const word = document.getElementById("search").value.toLowerCase();
-            document.querySelectorAll(".item").forEach(function (el) {
-                el.style.display = el.textContent.toLowerCase().includes(word) ? "" : "none";
-            });
-        }
-        document.getElementById("searchBtn").addEventListener("click", doSearch);
-        document.getElementById("search").addEventListener("keydown", function (e) {
-            if (e.key === "Enter") doSearch();
-        });
+function doSearch() {
+      const word = document.getElementById("search").value.trim();
+        if (word) location.href = "results.html?q=" + encodeURIComponent(word);
+}
+document.getElementById("searchBtn").addEventListener("click", doSearch);
+document.getElementById("search").addEventListener("keydown", function (e) {
+      if (e.key === "Enter") doSearch();
+    });)
+}
     </script>
 </html>
